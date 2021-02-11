@@ -1,0 +1,42 @@
+{
+    "name": "bhavingajjar/php-utilities",
+    "description": "PHP common and useful Utilities(Helpers)",
+    "keywords": [
+        "bhavingajjar",
+        "php-utilities"
+    ],
+    "homepage": "https://github.com/bhavingajjar/php-utilities",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Bhavin Gajjar",
+            "email": "gajjarbhavin22@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bhavingajjar\\PhpUtilities\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Bhavingajjar\\PhpUtilities\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
