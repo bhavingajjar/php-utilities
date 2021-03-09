@@ -41,6 +41,29 @@ class PhpUtilities
     {
         return ($value == (int)$value) ? (int)$value : (float)$value;
     }
+
+    /**
+     * getPercentageAmount will get input as amount & percentage as number and return percentage amount
+     * @param $amount
+     * @param $percentage
+     * @return float|int
+     */
+    public static function getPercentageAmount($amount, $percentage)
+    {
+        return self::parseNumber((($percentage / 100) * $amount));
+    }
+
+    /**
+     * getAmountPercentage will get input as amount & total as number and return amount percentage
+     * @param $amount
+     * @param $total
+     * @return float|int
+     */
+    public static function getAmountPercentage($amount, $total)
+    {
+        return self::parseNumber((($amount * 100) / $total));
+    }
+
     /*
      * ================
      * Number Functions

@@ -1,11 +1,13 @@
-# Very short description of the package
+# PHP common and useful Utilities(Helpers)
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/bhavingajjar/php-utilities.svg?style=flat-square)](https://packagist.org/packages/bhavingajjar/php-utilities)
 [![Build Status](https://img.shields.io/travis/bhavingajjar/php-utilities/master.svg?style=flat-square)](https://travis-ci.org/bhavingajjar/php-utilities)
 [![Quality Score](https://img.shields.io/scrutinizer/g/bhavingajjar/php-utilities.svg?style=flat-square)](https://scrutinizer-ci.com/g/bhavingajjar/php-utilities)
 [![Total Downloads](https://img.shields.io/packagist/dt/bhavingajjar/php-utilities.svg?style=flat-square)](https://packagist.org/packages/bhavingajjar/php-utilities)
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
+All In one utility class for rapid php development purpose!
+
+it includes many functions and functionalities that is used in the web application, It can be used with any php framework or with a core php
 
 ## Installation
 
@@ -18,7 +20,9 @@ composer require bhavingajjar/php-utilities
 ## Usage
 
 ``` php
-// Usage description here
+use Bhavingajjar\PhpUtilities\PhpUtilities;
+
+$number=PhpUtilities::parseNumber('10.5');
 ```
 
 ### Testing
@@ -47,7 +51,3 @@ If you discover any security related issues, please email gajjarbhavin22@gmail.c
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
-
-## PHP Package Boilerplate
-
-This package was generated using the [PHP Package Boilerplate](https://laravelpackageboilerplate.com).
